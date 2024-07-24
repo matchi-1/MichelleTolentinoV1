@@ -5,21 +5,59 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>My Portfolio</title>
-    <link rel="stylesheet" href="style.css" />
-    <link rel="stylesheet" href="mediaqueries.css" />
+    <link rel="stylesheet" href="./css/general.css" />
+    <link rel="stylesheet" href="./css/profile.css" />
+    <link rel="stylesheet" href="./css/mediaqueries.css" />
   </head>
   <body>
+    <!-- TOP NAVI START --> 
     <nav id="desktop-nav">
-      <div class="logo">John Doe</div>
-      <div>
-        <ul class="nav-links">
+      <div class="logo">
+        <a href="#profile" class="navi-btn">
+          <img src="./assets/michelle-logo.png" alt="Michelle Tolentino Logo"/>
+        </a>
+      </div>
+       
+      <!-- SECTIONS NAVI --> 
+      <div class="glass-cont-navi">
+        <ul>
+          <li><a href="#profile">Home</a></li>
           <li><a href="#about">About</a></li>
+          <li><a href="#skills">Skills</a></li>
           <li><a href="#experience">Experience</a></li>
           <li><a href="#projects">Projects</a></li>
           <li><a href="#contact">Contact</a></li>
         </ul>
       </div>
+
+      <!-- SOCIAL LINKS --> 
+      <div class="nav-social-links-cont">
+        <ul class="nav-social-links">
+          <li>
+            <a href="https://www.linkedin.com/in/michelle-tolentino-match1/" target="_blank">
+              <img src="./assets/socmed-logos/linkedin-logo.png" alt="Michelle Tolentino LinkedIn" />
+            </a>
+          </li>
+          <li>
+            <a href="https://github.com/matchi-1" target="_blank">
+              <img src="./assets/socmed-logos/github-logo.png" alt="Michelle Tolentino Github" />
+            </a>
+          </li>
+          <li>
+            <a href="https://www.facebook.com/mixee.vynx.1" target="_blank">
+              <img src="./assets/socmed-logos/facebook-logo.png" alt="Michelle Tolentino Facebook" />
+            </a>
+          </li>
+          <li>
+            <a href="https://www.instagram.com/vynxshieee/" target="_blank">
+              <img src="./assets/socmed-logos/instagram-logo.png" alt="Michelle Tolentino Instagram" />
+            </a>
+          </li>
+        </ul>
+      </div>
     </nav>
+
+    <!-- HAMBURGER NAVI --> 
     <nav id="hamburger-nav">
       <div class="logo">John Doe</div>
       <div class="hamburger-menu">
@@ -28,15 +66,47 @@
           <span></span>
           <span></span>
         </div>
-        <div class="menu-links">
-          <li><a href="#about" onclick="toggleMenu()">About</a></li>
-          <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
-          <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
-          <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
-        </div>
       </div>
     </nav>
-    <section id="profile">
+    
+    <div class="overlay-menu">
+      <ul class="menu-links">
+        <li><a href="#about" onclick="toggleMenu()">About</a></li>
+        <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+        <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+        <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+      </ul>
+
+      <!-- SOCIAL LINKS --> 
+      <div class="nav-social-links-cont">
+        <ul class="nav-social-links">
+          <li>
+            <a href="https://www.linkedin.com/in/michelle-tolentino-match1/" target="_blank">
+              <img src="./assets/socmed-logos/linkedin-logo.png" alt="Michelle Tolentino LinkedIn" />
+            </a>
+          </li>
+          <li>
+            <a href="https://github.com/matchi-1" target="_blank">
+              <img src="./assets/socmed-logos/github-logo.png" alt="Michelle Tolentino Github" />
+            </a>
+          </li>
+          <li>
+            <a href="https://www.facebook.com/mixee.vynx.1" target="_blank">
+              <img src="./assets/socmed-logos/facebook-logo.png" alt="Michelle Tolentino Facebook" />
+            </a>
+          </li>
+          <li>
+            <a href="https://www.instagram.com/vynxshieee/" target="_blank">
+              <img src="./assets/socmed-logos/instagram-logo.png" alt="Michelle Tolentino Instagram" />
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- TOP NAVI END--> 
+
+    <section id="profile" class="grid-background-section">
       <div class="section__pic-container">
         <img src="./assets/profile-pic.png" alt="John Doe profile picture" />
       </div>
@@ -71,6 +141,7 @@
         </div>
       </div>
     </section>
+
     <section id="about">
       <p class="section__text__p1">Get To Know More</p>
       <h1 class="title">About Me</h1>
@@ -122,6 +193,12 @@
         onclick="location.href='./#experience'"
       />
     </section>
+
+    <section id="skills">
+
+    </section>
+
+
     <section id="experience">
       <p class="section__text__p1">Explore My</p>
       <h1 class="title">Experience</h1>
@@ -365,16 +442,6 @@
       </div>
     </section>
     <footer>
-      <nav>
-        <div class="nav-links-container">
-          <ul class="nav-links">
-            <li><a href="#about">About</a></li>
-            <li><a href="#experience">Experience</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#contact">Contact</a></li>
-          </ul>
-        </div>
-      </nav>
       <p>Copyright &#169; 2023 John Doe. All Rights Reserved.</p>
     </footer>
     <script src="script.js"></script>
