@@ -7,6 +7,7 @@
     <title>My Portfolio</title>
     <link rel="stylesheet" href="./css/general.css" />
     <link rel="stylesheet" href="./css/profile.css" />
+    <link rel="stylesheet" href="./css/about.css" />
     <link rel="stylesheet" href="./css/mediaqueries.css" />
   </head>
   <body>
@@ -59,7 +60,11 @@
 
     <!-- HAMBURGER NAVI --> 
     <nav id="hamburger-nav">
-      <div class="logo">John Doe</div>
+      <div class="logo">
+        <a href="#profile" class="navi-btn">
+          <img src="./assets/michelle-logo.png" alt="Michelle Tolentino Logo"/>
+        </a>
+      </div>
       <div class="hamburger-menu">
         <div class="hamburger-icon" onclick="toggleMenu()">
           <span></span>
@@ -68,10 +73,14 @@
         </div>
       </div>
     </nav>
+
+    <!-- BLUR DARK OVERLAY -->
+    <div class="overlay-blur" onclick="toggleMenu()"></div>
     
     <div class="overlay-menu">
       <ul class="menu-links">
         <li><a href="#about" onclick="toggleMenu()">About</a></li>
+        <li><a href="#skills" onclick="toggleMenu()">Skills</a></li>
         <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
         <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
         <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
@@ -106,93 +115,101 @@
 
     <!-- TOP NAVI END--> 
 
+    <!-- PROFILE SECTION -->
     <section id="profile" class="grid-background-section">
-      <div class="section__pic-container">
-        <img src="./assets/profile-pic.png" alt="John Doe profile picture" />
+
+      <div class="section__profile-pic-container">
+        <img src="./assets/profile-pic.png" alt="Michelle Tolentino profile picture" />
       </div>
-      <div class="section__text">
-        <p class="section__text__p1">Hello, I'm</p>
-        <h1 class="title">John Doe</h1>
-        <p class="section__text__p2">Frontend Developer</p>
-        <div class="btn-container">
-          <button
-            class="btn btn-color-2"
-            onclick="window.open('./assets/resume-example.pdf')"
-          >
-            Download CV
-          </button>
-          <button class="btn btn-color-1" onclick="location.href='./#contact'">
-            Contact Info
-          </button>
-        </div>
-        <div id="socials-container">
-          <img
-            src="./assets/linkedin.png"
-            alt="My LinkedIn profile"
-            class="icon"
-            onclick="location.href='https://linkedin.com/'"
-          />
-          <img
-            src="./assets/github.png"
-            alt="My Github profile"
-            class="icon"
-            onclick="location.href='https://github.com/'"
-          />
-        </div>
+    
+      <div class="section__profile-michelle">
+        <h1>Michelle</h1>
+        <div class="rectangle-shape-profile1"></div>
       </div>
+
+      <div class="section__profile-tolentino">
+        <h1>Tolentino</h1>
+      </div>
+
+      <div class="section__profile-roles">
+        <h2 id="blue-blur">developer</h2>
+        <h2 id="pink-blur">ai/ml engineer</h2>
+        <h2 id="yellow-blur">ui/ux designer</h2>
+      </div>
+
+      <div class="section__profile-resume">
+        <button class="btn-rounded1" href="path/to/your-resume.pdf" download="Your_Resume.pdf">
+          download resume
+        </button>
+        <button class="btn-stroked1">
+          contact me
+        </button>
+      </div>
+
+      <div class="section__profile-desc">
+        <h2 id="blue-blur">senior computer</h2>
+        <h2 id="pink-blur">science student</h2>
+        <h2 id="yellow-blur">@ PLM</h2>
+      </div>
+    
     </section>
 
-    <section id="about">
-      <p class="section__text__p1">Get To Know More</p>
-      <h1 class="title">About Me</h1>
-      <div class="section-container">
-        <div class="section__pic-container">
-          <img
-            src="./assets/about-pic.png"
-            alt="Profile picture"
-            class="about-pic"
-          />
-        </div>
-        <div class="about-details-container">
-          <div class="about-containers">
-            <div class="details-container">
-              <img
-                src="./assets/experience.png"
-                alt="Experience icon"
-                class="icon"
-              />
-              <h3>Experience</h3>
-              <p>2+ years <br />Frontend Development</p>
-            </div>
-            <div class="details-container">
-              <img
-                src="./assets/education.png"
-                alt="Education icon"
-                class="icon"
-              />
-              <h3>Education</h3>
-              <p>B.Sc. Bachelors Degree<br />M.Sc. Masters Degree</p>
-            </div>
-          </div>
-          <div class="text-container">
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic quis
-              reprehenderit et laborum, rem, dolore eum quod voluptate
-              exercitationem nobis, nihil esse debitis maxime facere minus sint
-              delectus velit in eos quo officiis explicabo deleniti dignissimos.
-              Eligendi illum libero dolorum cum laboriosam corrupti quidem,
-              reiciendis ea magnam? Nulla, impedit fuga!
-            </p>
-          </div>
-        </div>
-      </div>
-      <img
-        src="./assets/arrow.png"
-        alt="Arrow icon"
-        class="icon arrow"
-        onclick="location.href='./#experience'"
-      />
+    <!-- ABOUT -->
+    <section class="grid grid-1" id="about">
+      <div class="autoBLur">ENVISION —</div>
+      <div class="autoBLur">ENGINEER</div>
+      <div class="autoBLur">EXECUTE —</div>
+      <div class="autoBLur">ELEVATE</div>
+      <div class="autoBLur"><a href="https://github.com/matchi-1" target="_blank">MATCHI DEV &#8599;</a></div>
     </section>
+
+    <section class="grid grid-2" id="about">
+      <h2 class="autoShow">about me</h2>
+      <div class="autoShow">
+          <figure>
+              <img src="./assets/3d-circle.png" class="autoRotate">
+          </figure>
+          <p>
+              Year 2022, I joined a microcomputer innovation organized by The Department of Science and Technology,
+              where the competitors harnessed ML to innovate tech that either addressed an untouched niche or provided
+              accessible solutions for marginalized communities. That was the first time I got hooked to <b>Computer science</b>,
+              specially into AI/ML, inspiring me to innovate, develop, and produce outputs that could be transformative.
+          </p>
+      </div>
+      <div class="autoShow">
+          <p>
+              For me, the appeal of this technology goes beyond its technical capabilities. It's the potential
+              to give back to society that truly resonates with me. <i>I believe that AI/ML is not just a personal
+              passion, but a <b>societal imperative.</b></i>
+          </p>
+          <figure>
+              <img src="./assets/cubes.png" class= "autoRotate25">
+          </figure>
+      </div>
+      <div class="autoShow">
+          <figure>
+              <img src="./assets/donut.png" class="autoRotate">
+          </figure>
+          <p>
+              Currently, I’m a 19-year old undergraduate at <b>Pamantasan ng Lungsod ng Maynila</b>, actively involved in various
+              <b>volunteer organizations.</b> I have practical experience in <b>developing models for ML</b> using python and
+              have also contributed to several <b>full-stack development projects</b>. My skills extend to Back-End &
+              Front-End Software Development, Database Management, and UI/UX design!
+          </p>
+      </div>
+      <div class="autoShow">
+          <p>
+              I've also <b>proactively led teams</b> and managed projects successfully, honing my project management skills over the years.
+              Academically, I’ve consistently been a <b>top student</b> in my batch, with a cumulative GPA of 1.0924.
+          </p>
+          <figure>
+              <img src="./assets/tp-donuts.png" class= "autoRotate25">
+          </figure>
+      </div>
+      <div>
+        <h2 class="autoShow">THE HORIZON BECKONS</h2>
+      </div>
+  </section>
 
     <section id="skills">
 

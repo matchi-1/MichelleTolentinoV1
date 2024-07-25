@@ -1,8 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
 @media screen and (max-width: 1400px) {
-  #profile {
-    height: 83vh;
-    margin-bottom: 6rem;
-  }
   .about-containers {
     flex-wrap: wrap;
   }
@@ -13,6 +11,15 @@
 }
 
 @media screen and (max-width: 1100px) {
+  .logo{
+    height: 110%;
+    padding-left: .8rem;
+  }
+
+  .logo img{
+    height: 120%;
+  }
+
   .overlay-menu {
     width: 50%;
   }
@@ -31,6 +38,47 @@
   .section-container {
     display: block;
   }
+
+  .section__profile-resume {
+    bottom: 25vh;
+  }
+
+  .section__profile-desc {
+    bottom: 10vh;
+  }
+
+  .section__profile-desc h2 {
+    font-size: 2.1vw;
+  }
+
+  .section__profile-roles h2{
+    font-size: 3.5vw;
+  }
+
+  .btn-rounded1{
+    width: 32vw;
+    font-size: .85rem;
+  }
+  .btn-stroked1 {
+    width: 19vw;
+    font-size: .8rem;
+  }
+
+  /* ABOUT */
+  .grid-1{
+    font-size: 6.5em;
+    gap: 0px;
+  }
+
+  .grid-2{
+    gap: 0px;
+  }
+
+  .grid-2 div {
+    padding-top: 0em;
+    gap: 3em;
+  }
+
   .arrow {
     display: none;
   }
@@ -41,27 +89,155 @@
   section {
     margin: 0 5%;
   }
-  .section__pic-container {
-    width: 275px;
-    height: 275px;
-    margin: 0 auto 2rem;
+  .section__profile-pic-container {
+    width: 60vh;
+    height: 60vh;
   }
   .about-containers {
     margin-top: 0;
   }
 }
 
+
+@media screen and (max-width: 810px) {
+  /*.section__profile-resume {
+    bottom: 25vh;
+  }
+  .btn-rounded1{
+    width: 32vw;
+    font-size: .85rem;
+  }
+  .btn-stroked1 {
+    width: 19vw;
+    font-size: .8rem;
+  }*/
+
+  .grid-1{
+    font-size: 5.3em;
+    margin: 0;
+    gap: 0px;
+  }
+
+  .grid-1 div{
+    padding: .8em 1em;
+}
+
+  .grid-2 {
+    padding-bottom: 2em;
+  }
+
+  .grid-2 h2{
+    font-size: 2em;
+  }
+  .grid-2 figure {
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    margin: 0; /* Remove default margins */
+}
+  .grid-2 figure img{
+    width: 50%;
+  }
+
+
+  .grid-2 div {
+    grid-template-columns: 1fr; 
+    font-size: .8em;
+    gap: 4em;
+  }
+  
+}
+
 @media screen and (max-width: 600px) {
+  .logo{
+    height: 100%;
+    padding-left: .4rem;
+  }
+
   .overlay-menu {
     width: 65%;
   }
+
+  /*PROFILE SECTION*/
+
+  .section__profile-pic-container {
+    width: 40vh;
+    height: 40vh;
+  }
+
+  .section__profile-michelle,
+  .section__profile-tolentino {
+    height: 11vw;
+  }
+
+  .section__profile-michelle h1 {
+    transform: translateX(-6%);
+  }
+  .section__profile-tolentino h1 {
+    transform: translateX(4.8%);
+  }
+
+  .section__profile-michelle h1,
+  .section__profile-tolentino h1{
+    font-size: 15vw;
+    letter-spacing: 2px;
+  }
+  .section__profile-michelle h1:hover,
+  .section__profile-tolentino h1:hover {
+    filter: blur(3px);
+    letter-spacing: 3px;
+    font-size: 15vw;
+  }
+
+  .section__profile-roles{
+    transform: rotate(-90deg);
+    bottom: 20vh;
+    left: -10vw;
+  }
+
+  .section__profile-roles h2{
+    font-size: 1.7rem;
+  }
+
+  .section__profile-resume {
+    bottom: 45vh;
+  }
+
+  .btn-rounded1{
+    width: 60vw;
+    height: 6vh;
+    padding: .5rem;
+    font-size: .85rem;
+  }
+  .btn-stroked1 {
+    width: 40vw;
+    font-size: .8rem;
+  }
+
+  .section__profile-desc {
+    bottom: 30vh;
+  }
+
+  .section__profile-desc {
+    bottom: 18vh;
+  }
+
+  .section__profile-desc h2 {
+    font-size: 3.3vw;
+  }
+    
+  /*PROFILE SECTION END*/
+
+  /* ABOUT */
+  .grid-1{
+    font-size: 3em;
+    padding: 0em;
+    grid-template-rows: repeat(var(--row), 100px);
+  }
+
   #contact,
   footer {
     height: 40vh;
-  }
-  #profile {
-    height: 83vh;
-    margin-bottom: 0;
   }
   article {
     font-size: 1rem;
@@ -85,19 +261,13 @@
   .experience-sub-title {
     font-size: 1.25rem;
   }
-  .logo {
-    font-size: 1.5rem;
-  }
+  
   .nav-links {
     flex-direction: column;
     gap: 0.5rem;
     text-align: center;
   }
-  .section__pic-container {
-    width: auto;
-    height: 46vw;
-    justify-content: center;
-  }
+  
   .section__text__p2 {
     font-size: 1.25rem;
   }

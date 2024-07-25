@@ -27,22 +27,26 @@ document.addEventListener("DOMContentLoaded", () => {
 
 // Close the menu if viewport is resized to smallest size
 function handleResize() {
+  const overlayBlur = document.querySelector(".overlay-blur");
   const overlayMenu = document.querySelector(".overlay-menu");
   const hamburgerIcon = document.querySelector(".hamburger-icon");
+
   if (window.innerWidth >= 1100) {
-    overlayMenu.classList.remove("open");
-    hamburgerIcon.classList.remove("open");
+    // Remove 'open' class from all elements if viewport width is 1100px or more
+    if (overlayBlur) overlayBlur.classList.remove("open");
+    if (overlayMenu) overlayMenu.classList.remove("open");
+    if (hamburgerIcon) hamburgerIcon.classList.remove("open");
   }
 }
 
-// Add event listener for resize
 window.addEventListener("resize", handleResize);
 
 
-
 function toggleMenu() {
+  const overlayblur = document.querySelector(".overlay-blur");
   const overlayMenu = document.querySelector(".overlay-menu");
   const icon = document.querySelector(".hamburger-icon");
+  overlayblur.classList.toggle("open");
   overlayMenu.classList.toggle("open");
   icon.classList.toggle("open");
 }
