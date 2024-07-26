@@ -199,7 +199,6 @@
   transition: .3s ease-in-out;
   cursor: pointer;
 }
-
 .btn-rounded1{
   background-color: black;
   color: white;
@@ -207,6 +206,7 @@
   width: 26vw;
   padding: 1rem;
 }
+
 
 .btn-rounded1:hover {
   background-color: #01a69e;

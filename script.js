@@ -26,7 +26,6 @@ document.addEventListener("DOMContentLoaded", () => {
 });
 
 
-
 // Close the menu if viewport is resized to smallest size
 function handleResize() {
   const overlayBlur = document.querySelector(".overlay-blur");
@@ -74,3 +73,8 @@ allIndicator.forEach(item=> {
     this.classList.add('active');
   })
 })
+
+// go to github 
+function redirectToGitHub() {
+  window.open('https://github.com/matchi-1', '_blank');
+}

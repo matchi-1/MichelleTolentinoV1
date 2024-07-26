@@ -4,7 +4,7 @@
     grid-template-columns: repeat(6, 1fr);
     grid-template-rows: repeat(var(--row), 100px);
     margin: 0rem;
-    gap: 40px;
+    gap: 30px;
     width: 100%;
     padding: 0rem;
 }
@@ -75,8 +75,14 @@
 }
 
 .grid-2 h2 {
-    color: white;
-    font-size: 3em;
+    color: black; 
+    text-shadow:
+        -2px -2px 0 white,  
+        2px -2px 0 white,
+        -2px 2px 0 white,
+        2px 2px 0 white, /* 2px stroke */
+        6px 6px 0 white; /* Bottom-right shadow with 6px thickness */
+    font-size: 5em;
     text-transform: uppercase;
     font-style: italic;
     text-align: center;
