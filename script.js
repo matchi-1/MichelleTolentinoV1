@@ -76,5 +76,5 @@ allIndicator.forEach(item=> {
 
 // go to github 
 function redirectToGitHub() {
-  window.open('https://github.com/matchi-1', '_blank');
-}
+          window.open('https://github.com/matchi-1', '_blank');
+        }
