@@ -25,6 +25,8 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 });
 
+
+
 // Close the menu if viewport is resized to smallest size
 function handleResize() {
   const overlayBlur = document.querySelector(".overlay-blur");
@@ -41,7 +43,7 @@ function handleResize() {
 
 window.addEventListener("resize", handleResize);
 
-
+// navi toggle menu
 function toggleMenu() {
   const overlayblur = document.querySelector(".overlay-blur");
   const overlayMenu = document.querySelector(".overlay-menu");
@@ -50,3 +52,25 @@ function toggleMenu() {
   overlayMenu.classList.toggle("open");
   icon.classList.toggle("open");
 }
+
+
+// tabbed menu skills
+const allIndicator = document.querySelectorAll('.indicator li');
+const allContent = document.querySelectorAll('.content li');
+
+allIndicator.forEach(item=> {
+  item.addEventListener('click', function () {
+    const content = document.querySelector(this.dataset.target);
+
+    allIndicator.forEach(i=> {
+      i.classList.remove('active');
+    })
+
+    allContent.forEach(i=> {
+      i.classList.remove('active');
+    })
+
+    content.classList.add('active');
+    this.classList.add('active');
+  })
+})

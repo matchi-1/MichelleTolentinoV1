@@ -12,6 +12,12 @@ body {
   font-family: "Montserrat", sans-serif;
   overflow-x: hidden;
   scroll-behavior: smooth;
+  background:
+      linear-gradient(to right, rgb(153, 153, 153) .5px, transparent 1.2px) 0 0,
+      linear-gradient(to bottom, rgb(153, 153, 153) .5px, transparent 1.2px) 0 0;
+  background-size: 33.2px 33.2px; /* Adjust size for cell size */
+  background-color: #f1f1f1; 
+  background-repeat: repeat;
 }
 
 html {

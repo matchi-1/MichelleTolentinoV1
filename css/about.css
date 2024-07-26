@@ -66,7 +66,7 @@
     grid-template-rows: repeat(4, auto); /* rows proportions */
     gap: 40px; 
     padding-top: 4em;
-    padding-bottom: 1em;
+    padding-bottom: 8em;
 }
 
 .grid-2 p {
@@ -163,7 +163,6 @@
     100%{
         filter: blur(40px);
     }
-    
 }
 
 .autoBLur{
