@@ -63,6 +63,8 @@ nav {
 
 .logo {
   height: 75%; 
+  background-color: white;
+  padding: .5rem;
 }
 
 .logo img {
@@ -123,17 +125,21 @@ nav {
 
 .nav-social-links-cont {
   height: 50px;
-  display: flex;
   align-items: center;
+  padding: .9rem;
 }
 
 .nav-social-links {
   display: flex; 
   list-style: none; 
-}
-
-.nav-social-links li {
-  margin-right: 1rem;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  gap: 1rem;
+  padding: .3rem;
+  padding-bottom: 0;
+  border-radius: 5px;
 }
 
 .nav-social-links li img {

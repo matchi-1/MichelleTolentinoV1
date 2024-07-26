@@ -198,6 +198,8 @@
   box-shadow: 2px 2px 0 0 rgb(83, 83, 83);
   transition: .3s ease-in-out;
   cursor: pointer;
+  text-decoration: none;
+  text-align: center;
 }
 .btn-rounded1{
   background-color: black;
