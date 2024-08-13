@@ -124,6 +124,15 @@
     }
 }
 
+@keyframes autoRotateAnimation1{
+    from{
+        transform: rotate(0deg);
+    }
+    to{
+        transform: rotate(360deg);
+    }
+}
+
 .autoRotate25{
     animation: autoRotate25Animation;
     animation-timeline: view();
@@ -145,7 +154,14 @@
         filter: blur(40px);
     }
 }
-
+@keyframes autoRotate25Animation1{
+    from{
+        transform: rotate(0deg);
+    }
+    to{
+        transform: rotate(25deg);
+    }
+}
 
 
 .autoShow{
@@ -171,6 +187,16 @@
     }
 }
 
+@keyframes autoShowAnimation1{
+    from{
+        opacity: 0;
+        transform: translateY(200px) scale(0.3);
+    }to{
+        opacity: 1;
+        transform: translateY(0) scale(1);
+    }
+}
+
 .autoBLur{
     animation: autoBLurAnimation linear both;
     animation-timeline: view();
@@ -184,5 +210,24 @@
     }
     100%{
         filter: blur(40px);
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .autoBLur{
+        animation: none;
+        animation-timeline: view();
+    }
+    .autoShow{
+        animation: autoShowAnimation1;
+        animation-timeline: view();
+    }
+    .autoRotate{
+        animation: autoRotateAnimation1;
+        animation-timeline: view();
+    }
+    .autoRotate25{
+        animation: autoRotate25Animation1;
+        animation-timeline: view();
     }
 }

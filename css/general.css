@@ -61,16 +61,11 @@ nav {
 }
 
 
-.logo {
-  height: 75%; 
-  background-color: white;
-  padding: .5rem;
-}
-
 .logo img {
-  height: 100%;
+  height: 50px;
   width: auto;
   transition: 0.5s ease;
+  border-radius: 5px;
 }
 
 .logo img:hover {
@@ -192,6 +187,9 @@ nav {
   width: 30px;
   cursor: pointer;
   z-index: 2;
+  background-color: white;
+  padding: 5px;
+  border-radius: 5px;
 }
 
 .hamburger-icon span {

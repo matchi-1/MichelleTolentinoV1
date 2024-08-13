@@ -23,20 +23,6 @@ li {
     --darkgrey: #494949;
 }
 
-/*
-.section-title {
-    font-size: 2em;
-    text-transform: uppercase;
-    font-style: italic;
-    background-color: black;
-    color: white;
-    padding: .1rem 2rem;
-    transform: rotate(.8deg);
-    z-index: 1;
-    cursor: default;
-    transition: .2s ease;
-}
-*/
 
 #section-title-techstack {
     font-size: 4vw;
@@ -159,20 +145,24 @@ li {
     }
 }
 
-@keyframes sectionAutoblur{
+@keyframes sectionAutoShow1{
     0%{
-        filter: blur(40px);
+        transform: translateY(200px) scale(0.3);
+        transform: rotate(40deg);
     }
-    30%, 85%{
-        filter: blur(0px);
+    45%, 60%{
+        transform: translateY(0) scale(1);
     }
     100%{
-        filter: blur(60px);
+        transform: rotate(-10deg);
     }
 }
 
 
-
-@media screen and (max-width: 576px) {
-	
+@media screen and (max-width: 600px) {
+    #skills{
+        animation: sectionAutoShow1 both;
+        animation-timeline: view();   
+    }
+    
 }

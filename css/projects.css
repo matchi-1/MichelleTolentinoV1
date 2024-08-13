@@ -41,6 +41,15 @@
     display: flex;
     width: fit-content;
 }
+.project-section-details img{
+    height: 1.7rem;
+    width: auto;
+    margin-bottom: 1.5rem;
+    transition: 0.2s ease-in-out;
+}
+.project-section-details img:hover{
+    height: 1.9rem;
+}
 
 .project-section-details h2{
     font-size: 2rem;

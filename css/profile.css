@@ -20,9 +20,8 @@
     position: relative;
     display: flex;
     flex-direction: column;
-    align-items: center; /* Center items horizontally */
+    align-items: center;
     justify-content: flex-start;
-    height: 98vh;
     font-family: 'Montserrat', sans-serif;
   }
 
@@ -200,6 +199,7 @@
   cursor: pointer;
   text-decoration: none;
   text-align: center;
+  align-items: center;
 }
 .btn-rounded1{
   background-color: black;
@@ -219,7 +219,7 @@
   color: rgb(0, 0, 0);
   height: 5vh;
   width: 15vw;
-  padding: .4rem;
+  padding: .5rem;
   font-weight: 600; 
 }
 
