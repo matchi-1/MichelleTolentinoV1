@@ -358,3 +358,16 @@
     text-align: justify;
   }
 }
+
+
+@media screen and (max-width: 450px) {
+.section__profile-roles{
+  transform: rotate(-90deg);
+  bottom: 20vh;
+  left: -15vw;
+}
+
+.section__profile-desc {
+  bottom: 25vh;
+}
+}

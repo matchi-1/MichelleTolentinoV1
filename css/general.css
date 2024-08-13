@@ -6,6 +6,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+
 }
 
 body {
@@ -183,8 +184,8 @@ nav {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  height: 24px;
-  width: 30px;
+  height: 34px;
+  width: 34px;
   cursor: pointer;
   z-index: 2;
   background-color: white;
